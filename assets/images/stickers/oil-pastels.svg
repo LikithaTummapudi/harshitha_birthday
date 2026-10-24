@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 135">
+  <defs>
+    <filter id="pastels-shadow" x="-8%" y="-8%" width="125%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="box-cardboard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B3A67"/>
+      <stop offset="100%" stop-color="#1B2444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Open Oil Pastels Box Container -->
+  <rect x="15" y="15" width="170" height="85" rx="5" fill="url(#box-cardboard)" stroke="#12182B" stroke-width="2" filter="url(#pastels-shadow)"/>
+  
+  <!-- Box Top Flap / Header -->
+  <rect x="15" y="15" width="170" height="22" rx="4" fill="#E63946"/>
+  <text x="100" y="30" font-family="sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">★ OIL PASTELS ★</text>
+
+  <!-- Inner Plastic Tray Base -->
+  <rect x="22" y="42" width="156" height="52" rx="3" fill="#0F1424"/>
+
+  <!-- Row of Pastel Sticks in Tray with Paper Sleeves -->
+  <!-- 1. Red -->
+  <g transform="translate(26, 45)">
+    <!-- Colored Tip -->
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#E63946"/>
+    <!-- Paper Sleeve -->
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#E63946" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#E63946"/>
+  </g>
+
+  <!-- 2. Orange -->
+  <g transform="translate(43, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#F4A261"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#F4A261" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#F4A261"/>
+  </g>
+
+  <!-- 3. Yellow -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#FFD166"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#FFD166" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#FFD166"/>
+  </g>
+
+  <!-- 4. Green -->
+  <g transform="translate(77, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#06D6A0"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#06D6A0" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#06D6A0"/>
+  </g>
+
+  <!-- 5. Blue (Harshitha's & My Favorite!) -->
+  <g transform="translate(94, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#118AB2"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#118AB2" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#118AB2"/>
+  </g>
+
+  <!-- 6. Navy -->
+  <g transform="translate(111, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#1D3557"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#1D3557" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#1D3557"/>
+  </g>
+
+  <!-- 7. Purple / Violet -->
+  <g transform="translate(128, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#8338EC"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#8338EC" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#8338EC"/>
+  </g>
+
+  <!-- 8. Pink -->
+  <g transform="translate(145, 45)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#FF70A6"/>
+    <rect x="0" y="8" width="12" height="34" rx="1" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.8"/>
+    <line x1="2" y1="18" x2="10" y2="18" stroke="#FF70A6" stroke-width="2"/>
+    <rect x="0" y="42" width="12" height="4" rx="1" fill="#FF70A6"/>
+  </g>
+
+  <!-- Loose Blue Pastel Stick in Front with Smudge -->
+  <!-- Colorful Smudge streak -->
+  <path d="M 30,116 Q 70,122 110,114 Q 130,118 150,112" stroke="#118AB2" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.35"/>
+  <path d="M 60,118 Q 90,124 125,116" stroke="#FFD166" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Angled Loose Blue Pastel -->
+  <g transform="translate(55, 106) rotate(6)">
+    <rect x="0" y="0" width="46" height="13" rx="4" fill="#118AB2" stroke="#0E6B8C" stroke-width="1"/>
+    <!-- Paper wrapper -->
+    <rect x="10" y="0" width="28" height="13" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="0.5"/>
+    <text x="24" y="9" font-family="monospace, sans-serif" font-size="6" font-weight="700" fill="#118AB2" text-anchor="middle">PASTEL</text>
+  </g>
+
+  <!-- Cute Memory Note Tag pinned to box -->
+  <rect x="120" y="100" width="70" height="20" rx="3" fill="#FFF3B0" stroke="#E0C068" stroke-width="1" transform="rotate(-4 120 100)"/>
+  <text x="155" y="114" font-family="'Patrick Hand', 'Caveat', cursive, sans-serif" font-size="10" font-weight="800" fill="#2E4057" text-anchor="middle" transform="rotate(-4 120 100)">our memory! 🎨</text>
+</svg>

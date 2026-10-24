@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 160" width="150" height="160">
+  <defs>
+    <filter id="flower-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="3.5" stdDeviation="3" flood-color="#3A4D39" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Sticker White Cutout Outline -->
+  <g filter="url(#flower-shadow)">
+    <!-- Stems -->
+    <path d="M 50,150 Q 65,110 70,75 Q 75,45 88,25" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 68,90 Q 50,80 40,65" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 73,65 Q 95,58 108,45" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Flower Head White Bases -->
+    <circle cx="88" cy="25" r="22" fill="#FFFFFF"/>
+    <circle cx="38" cy="62" r="17" fill="#FFFFFF"/>
+    <circle cx="110" cy="45" r="15" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Sage Green Delicate Stems -->
+  <path d="M 50,150 Q 65,110 70,75 Q 75,45 88,25" fill="none" stroke="#7A9A78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 68,90 Q 50,80 40,65" fill="none" stroke="#7A9A78" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 73,65 Q 95,58 108,45" fill="none" stroke="#7A9A78" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Sage Green Botanical Leaves -->
+  <path d="M 62,115 C 48,110 42,98 48,92 C 58,95 62,106 62,115 Z" fill="#8FAFA0" stroke="#688B74" stroke-width="1"/>
+  <path d="M 70,95 C 84,90 92,100 88,108 C 78,106 72,98 70,95 Z" fill="#9CBBA9" stroke="#688B74" stroke-width="1"/>
+  <path d="M 75,52 C 65,42 68,32 75,34 C 78,40 76,48 75,52 Z" fill="#8FAFA0" stroke="#688B74" stroke-width="1"/>
+
+  <!-- Botanical Bloom 1 (Top Center Bloom) -->
+  <g transform="translate(88, 25)">
+    <!-- 5 Delicate Vintage Blush Petals -->
+    <ellipse cx="0" cy="-12" rx="7" ry="11" fill="#F7D8DC" stroke="#DDA8B0" stroke-width="1"/>
+    <ellipse cx="11" cy="-4" rx="7" ry="11" transform="rotate(72, 11, -4)" fill="#F5CED3" stroke="#DDA8B0" stroke-width="1"/>
+    <ellipse cx="7" cy="10" rx="7" ry="11" transform="rotate(144, 7, 10)" fill="#F2C2C9" stroke="#DDA8B0" stroke-width="1"/>
+    <ellipse cx="-7" cy="10" rx="7" ry="11" transform="rotate(216, -7, 10)" fill="#F5CED3" stroke="#DDA8B0" stroke-width="1"/>
+    <ellipse cx="-11" cy="-4" rx="7" ry="11" transform="rotate(288, -11, -4)" fill="#F7D8DC" stroke="#DDA8B0" stroke-width="1"/>
+    <!-- Flower Center Stamen -->
+    <circle cx="0" cy="0" r="5" fill="#E8B86D" stroke="#C9984E" stroke-width="1"/>
+    <circle cx="0" cy="0" r="2.5" fill="#C9984E"/>
+    <!-- Golden Pollen Dots -->
+    <circle cx="-2" cy="-2" r="0.8" fill="#FFF2CE"/>
+    <circle cx="2" cy="1" r="0.8" fill="#FFF2CE"/>
+  </g>
+
+  <!-- Botanical Bloom 2 (Left Side Bloom) -->
+  <g transform="translate(38, 62) scale(0.78)">
+    <ellipse cx="0" cy="-10" rx="6" ry="9" fill="#FCE5E8" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="9" cy="-3" rx="6" ry="9" transform="rotate(72, 9, -3)" fill="#FADDE1" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="6" cy="8" rx="6" ry="9" transform="rotate(144, 6, 8)" fill="#F7D0D7" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="-6" cy="8" rx="6" ry="9" transform="rotate(216, -6, 8)" fill="#FADDE1" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="-9" cy="-3" rx="6" ry="9" transform="rotate(288, -9, -3)" fill="#FCE5E8" stroke="#E5B5BC" stroke-width="1"/>
+    <circle cx="0" cy="0" r="4" fill="#E8B86D"/>
+    <circle cx="0" cy="0" r="1.8" fill="#C9984E"/>
+  </g>
+
+  <!-- Botanical Bloom 3 (Right Bud / Small Bloom) -->
+  <g transform="translate(110, 45) scale(0.68)">
+    <ellipse cx="0" cy="-9" rx="5.5" ry="8" fill="#FCE9EC" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="8" cy="-2" rx="5.5" ry="8" transform="rotate(72, 8, -2)" fill="#FADDE1" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="5" cy="7" rx="5.5" ry="8" transform="rotate(144, 5, 7)" fill="#F7D0D7" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="-5" cy="7" rx="5.5" ry="8" transform="rotate(216, -5, 7)" fill="#FADDE1" stroke="#E5B5BC" stroke-width="1"/>
+    <ellipse cx="-8" cy="-2" rx="5.5" ry="8" transform="rotate(288, -8, -2)" fill="#FCE9EC" stroke="#E5B5BC" stroke-width="1"/>
+    <circle cx="0" cy="0" r="3.5" fill="#E8B86D"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 120">
+  <defs>
+    <filter id="clip-shadow" x="-20%" y="-10%" width="140%" height="120%">
+      <feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <path d="M 25,10 C 12,10 10,22 10,35 L 10,95 C 10,110 38,110 38,95 L 38,40 C 38,28 20,28 20,40 L 20,85 C 20,90 28,90 28,85 L 28,45" 
+        fill="none" stroke="#D4AF37" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#clip-shadow)"/>
+  <path d="M 25,10 C 12,10 10,22 10,35 L 10,95 C 10,110 38,110 38,95 L 38,40 C 38,28 20,28 20,40 L 20,85 C 20,90 28,90 28,85 L 28,45" 
+        fill="none" stroke="#F6E082" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+</svg>

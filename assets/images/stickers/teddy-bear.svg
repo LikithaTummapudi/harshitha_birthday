@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 145" width="130" height="145">
+  <defs>
+    <filter id="bear-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="3.5" stdDeviation="3.5" flood-color="#4A3525" flood-opacity="0.22"/>
+    </filter>
+    <linearGradient id="fur-main" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DDB389"/>
+      <stop offset="100%" stop-color="#C29468"/>
+    </linearGradient>
+    <linearGradient id="fur-light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7E6D5"/>
+      <stop offset="100%" stop-color="#EAD1BB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White Cutout Sticker Outline -->
+  <g filter="url(#bear-shadow)">
+    <!-- Ears base -->
+    <circle cx="36" cy="36" r="16" fill="#FFFFFF"/>
+    <circle cx="94" cy="36" r="16" fill="#FFFFFF"/>
+    <!-- Head base -->
+    <ellipse cx="65" cy="52" rx="34" ry="30" fill="#FFFFFF"/>
+    <!-- Body base -->
+    <ellipse cx="65" cy="98" rx="36" ry="36" fill="#FFFFFF"/>
+    <!-- Arms base -->
+    <ellipse cx="28" cy="92" rx="14" ry="20" transform="rotate(25, 28, 92)" fill="#FFFFFF"/>
+    <ellipse cx="102" cy="92" rx="14" ry="20" transform="rotate(-25, 102, 92)" fill="#FFFFFF"/>
+    <!-- Feet base -->
+    <ellipse cx="42" cy="126" rx="16" ry="13" fill="#FFFFFF"/>
+    <ellipse cx="88" cy="126" rx="16" ry="13" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Left & Right Ears -->
+  <circle cx="36" cy="36" r="13" fill="url(#fur-main)"/>
+  <circle cx="36" cy="36" r="8" fill="#F0C7C7"/>
+  <circle cx="94" cy="36" r="13" fill="url(#fur-main)"/>
+  <circle cx="94" cy="36" r="8" fill="#F0C7C7"/>
+
+  <!-- Arms -->
+  <ellipse cx="28" cy="92" rx="11" ry="17" transform="rotate(25, 28, 92)" fill="url(#fur-main)"/>
+  <ellipse cx="102" cy="92" rx="11" ry="17" transform="rotate(-25, 102, 92)" fill="url(#fur-main)"/>
+
+  <!-- Body -->
+  <ellipse cx="65" cy="98" rx="32" ry="32" fill="url(#fur-main)"/>
+  <!-- Belly Patch with cute stitches -->
+  <ellipse cx="65" cy="100" rx="20" ry="22" fill="url(#fur-light)"/>
+  <path d="M 65,82 L 65,118" stroke="#B88A5E" stroke-width="1.2" stroke-dasharray="3 2"/>
+
+  <!-- Feet & Footpads -->
+  <ellipse cx="42" cy="126" rx="13" ry="10" fill="url(#fur-main)"/>
+  <ellipse cx="42" cy="126" rx="8" ry="6" fill="url(#fur-light)"/>
+  <circle cx="38" cy="122" r="1.8" fill="#DDB389"/>
+  <circle cx="42" cy="120" r="1.8" fill="#DDB389"/>
+  <circle cx="46" cy="122" r="1.8" fill="#DDB389"/>
+
+  <ellipse cx="88" cy="126" rx="13" ry="10" fill="url(#fur-main)"/>
+  <ellipse cx="88" cy="126" rx="8" ry="6" fill="url(#fur-light)"/>
+  <circle cx="84" cy="122" r="1.8" fill="#DDB389"/>
+  <circle cx="88" cy="120" r="1.8" fill="#DDB389"/>
+  <circle cx="92" cy="122" r="1.8" fill="#DDB389"/>
+
+  <!-- Head -->
+  <ellipse cx="65" cy="52" rx="31" ry="27" fill="url(#fur-main)"/>
+
+  <!-- Snout Area -->
+  <ellipse cx="65" cy="59" rx="14" ry="11" fill="url(#fur-light)"/>
+  <!-- Button Nose -->
+  <ellipse cx="65" cy="54" rx="4.5" ry="3.2" fill="#3D291D"/>
+  <circle cx="63.5" cy="53" r="1" fill="#FFFFFF"/>
+  <!-- Mouth -->
+  <path d="M 65,57 L 65,63 M 61,62 Q 65,66 69,62" fill="none" stroke="#3D291D" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Eyes with Sparkle -->
+  <circle cx="51" cy="48" r="3.6" fill="#2E1C12"/>
+  <circle cx="49.5" cy="46.5" r="1.2" fill="#FFFFFF"/>
+  <circle cx="79" cy="48" r="3.6" fill="#2E1C12"/>
+  <circle cx="77.5" cy="46.5" r="1.2" fill="#FFFFFF"/>
+
+  <!-- Cheerful Rosy Cheeks -->
+  <circle cx="43" cy="56" r="4.5" fill="#FFAAA6" opacity="0.7"/>
+  <circle cx="87" cy="56" r="4.5" fill="#FFAAA6" opacity="0.7"/>
+
+  <!-- Cute Blue Ribbon Bow Tie around neck -->
+  <g transform="translate(65, 75)">
+    <!-- Bow Loops -->
+    <path d="M 0,0 C -8,-7 -16,-3 -14,3 C -13,7 -5,3 0,0 Z" fill="#7EABDE" stroke="#507EAE" stroke-width="1"/>
+    <path d="M 0,0 C 8,-7 16,-3 14,3 C 13,7 5,3 0,0 Z" fill="#7EABDE" stroke="#507EAE" stroke-width="1"/>
+    <!-- Center knot -->
+    <circle cx="0" cy="0" r="3" fill="#507EAE"/>
+    <!-- Tails -->
+    <path d="M 0,0 Q -4,9 -8,12" stroke="#507EAE" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 0,0 Q 4,9 8,12" stroke="#507EAE" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

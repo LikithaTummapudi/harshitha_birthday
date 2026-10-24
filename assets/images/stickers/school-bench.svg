@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 130">
+  <defs>
+    <filter id="bench-shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="bench-wood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#BC6C25"/>
+    </linearGradient>
+    <linearGradient id="metal-frame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#495057"/>
+      <stop offset="100%" stop-color="#212529"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadows / base ground line -->
+  <ellipse cx="85" cy="120" rx="70" ry="6" fill="#000000" opacity="0.15"/>
+
+  <!-- Metal Legs & Frame (Back) -->
+  <path d="M 38,55 L 38,118 M 132,55 L 132,118" stroke="url(#metal-frame)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 38,90 L 132,90" stroke="url(#metal-frame)" stroke-width="4"/>
+
+  <!-- Wooden Desk Top (Slight 3D perspective) -->
+  <polygon points="20,50 150,50 144,32 26,32" fill="url(#bench-wood)" stroke="#8B5A2B" stroke-width="1.5" filter="url(#bench-shadow)"/>
+  
+  <!-- Desk Plank Gap & Pencil Groove -->
+  <line x1="30" y1="36" x2="140" y2="36" stroke="#8B5A2B" stroke-width="2" opacity="0.6"/>
+  <line x1="40" y1="44" x2="130" y2="44" stroke="#5C3A1E" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Carved Heart Doodle on Desk -->
+  <path d="M 50,42 C 48,39 44,40 44,43 C 44,46 50,49 50,49 C 50,49 56,46 56,43 C 56,40 52,39 50,42 Z" fill="#E63946" opacity="0.8" transform="rotate(-15 50 42)"/>
+  <text x="65" y="45" font-family="'Patrick Hand', 'Caveat', cursive, sans-serif" font-size="8" font-weight="700" fill="#5C3A1E" opacity="0.8">H + B</text>
+
+  <!-- Metal Front Legs & Bench Connector -->
+  <path d="M 28,52 L 28,118 M 142,52 L 142,118" stroke="url(#metal-frame)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Curved connector to bench seat -->
+  <path d="M 28,85 Q 35,95 48,95 L 48,115" stroke="url(#metal-frame)" stroke-width="5" fill="none"/>
+  <path d="M 142,85 Q 135,95 122,95 L 122,115" stroke="url(#metal-frame)" stroke-width="5" fill="none"/>
+
+  <!-- Wooden Bench Seat -->
+  <polygon points="35,88 135,88 130,76 40,76" fill="url(#bench-wood)" stroke="#8B5A2B" stroke-width="1.5"/>
+  <line x1="42" y1="82" x2="128" y2="82" stroke="#8B5A2B" stroke-width="1" opacity="0.5"/>
+
+  <!-- Cute Memory Label Tag -->
+  <rect x="70" y="98" width="85" height="18" rx="3" fill="#FFF" stroke="#BC6C25" stroke-width="1" transform="rotate(2 70 98)"/>
+  <text x="112" y="111" font-family="'Patrick Hand', 'Caveat', cursive, sans-serif" font-size="10" font-weight="700" fill="#333" text-anchor="middle" transform="rotate(2 70 98)">secret bench giggles 🏫</text>
+</svg>

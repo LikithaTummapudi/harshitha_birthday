@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 135" width="160" height="135">
+  <defs>
+    <filter id="rickshaw-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="3.5" stdDeviation="3.5" flood-color="#264653" flood-opacity="0.22"/>
+    </filter>
+    <linearGradient id="hood-yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F4A261"/>
+    </linearGradient>
+    <linearGradient id="body-green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#1B4332"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sticker White Cutout Outline -->
+  <g filter="url(#rickshaw-shadow)">
+    <!-- Yellow hood base -->
+    <path d="M 28,68 C 22,46 36,24 64,22 L 118,22 C 138,22 144,38 144,56 L 144,72 Z" fill="#FFFFFF"/>
+    <!-- Body base -->
+    <rect x="22" y="58" width="124" height="46" rx="14" fill="#FFFFFF"/>
+    <!-- Front wheel base -->
+    <circle cx="36" cy="108" r="17" fill="#FFFFFF"/>
+    <!-- Rear wheel base -->
+    <circle cx="122" cy="108" r="17" fill="#FFFFFF"/>
+    <!-- Front mudguard base -->
+    <path d="M 20,86 Q 36,70 52,86 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Rear Wheel -->
+  <circle cx="122" cy="108" r="14" fill="#2B2D42"/>
+  <circle cx="122" cy="108" r="8" fill="#8D99AE" stroke="#EDF2F4" stroke-width="1.5"/>
+  <circle cx="122" cy="108" r="3" fill="#2B2D42"/>
+
+  <!-- Passenger Cabin Opening & Seat -->
+  <rect x="80" y="52" width="46" height="34" rx="4" fill="#1B4332"/>
+  <rect x="94" y="62" width="28" height="18" rx="3" fill="#8D5B4C"/>
+
+  <!-- Lower Green Auto Body -->
+  <path d="M 26,62 L 140,62 L 140,94 C 140,98 136,102 130,102 L 36,102 C 30,102 26,98 26,94 Z" fill="url(#body-green)"/>
+
+  <!-- Front Cowl & Handlebar Area -->
+  <path d="M 26,62 L 68,62 L 64,96 L 36,96 C 28,96 24,90 26,82 Z" fill="url(#body-green)"/>
+  <!-- Chrome Handlebars -->
+  <rect x="52" y="60" width="16" height="3" rx="1.5" fill="#E2E8F0"/>
+  <circle cx="50" cy="61.5" r="2.5" fill="#2B2D42"/>
+
+  <!-- Classic Yellow Top Canopy -->
+  <path d="M 32,62 C 26,42 42,26 66,24 L 116,24 C 136,24 140,38 140,54 L 140,62 Z" fill="url(#hood-yellow)"/>
+
+  <!-- Canopy Edge Hem / Stitches -->
+  <path d="M 30,62 Q 85,58 140,62" stroke="#E76F51" stroke-width="2.5" fill="none"/>
+  <line x1="30" y1="62" x2="140" y2="62" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- Front Windshield -->
+  <path d="M 36,58 L 68,58 L 64,30 L 44,32 C 38,38 36,48 36,58 Z" fill="#D8F3DC" stroke="#95D5B2" stroke-width="1.2"/>
+  <!-- Windshield Reflection -->
+  <line x1="42" y1="36" x2="56" y2="52" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tiny Wiper Blade -->
+  <line x1="60" y1="56" x2="48" y2="44" stroke="#1B4332" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Front Mudguard & Wheel -->
+  <path d="M 24,88 Q 36,76 48,88" fill="url(#body-green)" stroke="#1B4332" stroke-width="1.2"/>
+  <circle cx="36" cy="108" r="14" fill="#2B2D42"/>
+  <circle cx="36" cy="108" r="8" fill="#8D99AE" stroke="#EDF2F4" stroke-width="1.5"/>
+  <circle cx="36" cy="108" r="3" fill="#2B2D42"/>
+
+  <!-- Headlight with Amber Glow -->
+  <circle cx="25" cy="72" r="5" fill="#FFE66D" stroke="#FFFFFF" stroke-width="1.5"/>
+
+  <!-- Number Plate Tag / Bestie Meter -->
+  <rect x="76" y="88" width="34" height="9" rx="2" fill="#FFFFFF" stroke="#1B4332" stroke-width="0.8"/>
+  <text x="93" y="94.5" font-family="'Patrick Hand', cursive, sans-serif" font-size="6.5" font-weight="bold" fill="#1B4332" text-anchor="middle">BESTIES • 24/7</text>
+</svg>

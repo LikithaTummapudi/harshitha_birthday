@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshitha's Secret Birthday Diary ♡</title>
+    
+    <!-- Cohesive Blue Scrapbook Diary Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Confetti Particle Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Accessible Sound Toggle Floating Button -->
+    <button id="sound-toggle-btn" class="sound-toggle-btn" aria-label="Toggle sound effects">
+        🔊 <span class="sound-label">Sound: ON</span>
+    </button>
+
+    <!-- Scrapbook Global Navigation Bar -->
+    <nav id="scrapbook-navbar" class="scrapbook-nav-container" aria-label="Main Navigation">
+        <div class="scrapbook-nav-strip">
+            <span class="nav-dedication">for my favourite human ♡</span>
+            <div class="nav-links-group">
+                <button id="nav-item-birthday" class="scrapbook-nav-btn active" type="button">
+                    🎂 <span>Birthday</span>
+                </button>
+                <button id="nav-item-quiz" class="scrapbook-nav-btn" type="button">
+                    ✨ <span>Our Quiz</span>
+                </button>
+                <button id="nav-item-letter" class="scrapbook-nav-btn letter-nav-tab" type="button" style="display: none;">
+                    💌 <span>Letter</span>
+                </button>
+                <button id="nav-item-scrapbook" class="scrapbook-nav-btn" type="button">
+                    📖 <span>Scrapbook</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container with Strict View Separation -->
+    <main class="scrapbook-app-container">
+
+        <!-- ==========================================
+             STAGE 1: SECRET PASSWORD ENTRANCE
+             ========================================== -->
+        <section id="stage-entrance" class="stage-section active" aria-label="Password Entrance">
+            <div class="entrance-wrapper">
+                <div id="password-card" class="diary-lock-card">
+                    <div class="lock-illustration">🔒</div>
+                    <h1 class="diary-title">Harshitha's Secret Diary</h1>
+                    <p class="diary-subtitle">A secret birthday experience for my bestie. Enter the code to unlock!</p>
+                    
+                    <div class="password-input-group">
+                        <input 
+                            type="password" 
+                            id="pass-input" 
+                            class="diary-input" 
+                            placeholder="Enter 4-digit code" 
+                            maxlength="10" 
+                            autocomplete="off"
+                            aria-label="Secret passcode input"
+                        >
+                        <button type="button" id="toggle-password-visibility" class="toggle-pwd-btn" aria-label="Show password">👁️</button>
+                    </div>
+
+                    <button type="button" id="unlock-btn" class="scrapbook-btn">Unlock the secret ✨</button>
+                    <div id="password-feedback" class="diary-feedback" aria-live="polite"></div>
+                    <p class="password-hint">Hint: A very special date you definitely remember 😉</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 2: SUSPENSE SCREEN
+             ========================================== -->
+        <section id="stage-suspense" class="stage-section" aria-label="Suspense Transition">
+            <div class="suspense-wrapper">
+                <div class="suspense-card">
+                    <div class="suspense-present">🎁</div>
+                    <h2 class="suspense-quote">"Okay... something special is waiting for you."</h2>
+                    <p class="suspense-subtext">Are you ready?</p>
+                    <button type="button" id="suspense-btn" class="scrapbook-btn suspense-btn">LET'S FIND OUT ♡</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 3 & 4: BIRTHDAY CAKE & LIVING PHOTO ATMOSPHERE
+             ========================================== -->
+        <section id="stage-birthday" class="stage-section" aria-label="Birthday Celebration">
+            
+            <!-- Phase A: Centered Candle Ceremony Scene -->
+            <div id="cake-ceremony-scene" class="cake-ceremony-container">
+                <div class="ceremony-instructions-card pop-in">
+                    <span class="ceremony-tag">🎂 Special Moment</span>
+                    <h2 class="ceremony-prompt">Make a wish, Harshitha! ✨</h2>
+                    <p class="ceremony-subtext">Click the candles or press the button below to blow them out</p>
+                </div>
+
+                <!-- Illustrated Birthday Cake on Pedestal -->
+                <div id="birthday-cake-container" class="cake-container" title="Click or tap anywhere on the cake to blow out candles!">
+                    <svg class="birthday-cake-svg" viewBox="0 0 280 240" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="frosting-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFFFF" />
+                                <stop offset="100%" stop-color="#DCEBFA" />
+                            </linearGradient>
+                            <linearGradient id="cake-layer-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#A8C9F0" />
+                                <stop offset="100%" stop-color="#6D96CC" />
+                            </linearGradient>
+                            <filter id="cake-shadow" x="-10%" y="-10%" width="120%" height="120%">
+                                <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#34557F" flood-opacity="0.2" />
+                            </filter>
+                        </defs>
+
+                        <!-- Cake Plate -->
+                        <ellipse cx="140" cy="215" rx="125" ry="16" fill="#F8F5F0" stroke="#C5C9D9" stroke-width="3" filter="url(#cake-shadow)" />
+
+                        <!-- Bottom Layer -->
+                        <rect x="40" y="145" width="200" height="60" rx="8" fill="url(#cake-layer-grad)" />
+                        <path d="M 40,155 Q 65,175 90,155 Q 115,175 140,155 Q 165,175 190,155 Q 215,175 240,155 L 240,145 L 40,145 Z" fill="url(#frosting-grad)" />
+
+                        <!-- Top Layer -->
+                        <rect x="70" y="85" width="140" height="60" rx="6" fill="url(#cake-layer-grad)" />
+                        <path d="M 70,95 Q 87,115 105,95 Q 122,115 140,95 Q 158,115 175,95 Q 192,115 210,95 L 210,85 L 70,85 Z" fill="url(#frosting-grad)" />
+
+                        <!-- Candle 1 (Left) with flame & smoke wisp -->
+                        <g id="candle-1" class="candle-group">
+                            <rect x="95" y="45" width="10" height="40" rx="2" fill="#FFFFFF" stroke="#6D96CC" stroke-width="1.5" />
+                            <line x1="100" y1="45" x2="100" y2="38" stroke="#34557F" stroke-width="2" />
+                            <path id="candle-smoke-1" class="candle-smoke" d="M 100,24 Q 96,16 102,10 Q 98,4 100,0" fill="none" stroke="#C5C9D9" stroke-width="2.5" stroke-linecap="round" />
+                            <ellipse id="candle-flame-1" class="candle-flame" cx="100" cy="30" rx="6" ry="11" fill="#FFB703" />
+                        </g>
+
+                        <!-- Candle 2 (Center) with flame & smoke wisp -->
+                        <g id="candle-2" class="candle-group">
+                            <rect x="135" y="40" width="10" height="45" rx="2" fill="#FFFFFF" stroke="#6D96CC" stroke-width="1.5" />
+                            <line x1="140" y1="40" x2="140" y2="33" stroke="#34557F" stroke-width="2" />
+                            <path id="candle-smoke-2" class="candle-smoke" d="M 140,19 Q 136,12 142,6 Q 138,1 140,-3" fill="none" stroke="#C5C9D9" stroke-width="2.5" stroke-linecap="round" />
+                            <ellipse id="candle-flame-2" class="candle-flame" cx="140" cy="25" rx="6" ry="11" fill="#FFB703" />
+                        </g>
+
+                        <!-- Candle 3 (Right) with flame & smoke wisp -->
+                        <g id="candle-3" class="candle-group">
+                            <rect x="175" y="45" width="10" height="40" rx="2" fill="#FFFFFF" stroke="#6D96CC" stroke-width="1.5" />
+                            <line x1="180" y1="45" x2="180" y2="38" stroke="#34557F" stroke-width="2" />
+                            <path id="candle-smoke-3" class="candle-smoke" d="M 180,24 Q 176,16 182,10 Q 178,4 180,0" fill="none" stroke="#C5C9D9" stroke-width="2.5" stroke-linecap="round" />
+                            <ellipse id="candle-flame-3" class="candle-flame" cx="180" cy="30" rx="6" ry="11" fill="#FFB703" />
+                        </g>
+
+                        <text x="105" y="185" font-size="14" fill="#FFFFFF" opacity="0.9">💙</text>
+                        <text x="135" y="190" font-size="14" fill="#FFFFFF" opacity="0.9">✨</text>
+                        <text x="165" y="185" font-size="14" fill="#FFFFFF" opacity="0.9">💙</text>
+                    </svg>
+                </div>
+
+                <!-- Interactive Blow Out Action Group -->
+                <div class="ceremony-action-group">
+                    <button type="button" id="blow-candles-btn" class="scrapbook-btn blow-candles-cta">
+                        💨 Blow out the candles!
+                    </button>
+                    <span id="candle-count-indicator" class="candle-count-badge">3 candles lit</span>
+                </div>
+            </div>
+
+            <!-- Phase B: The Celebratory Reveal Scene (Revealed after candles are blown out) -->
+            <div id="birthday-reveal-scene" class="birthday-reveal-container" style="display: none;">
+                
+                <!-- Replay Button Bar -->
+                <div class="replay-bar">
+                    <button type="button" id="replay-cake-btn" class="replay-celebration-btn">
+                        ✨ Replay Cake Reveal
+                    </button>
+                </div>
+
+                <!-- Unified Hero Atmosphere: Centered Title surrounded by 6 Floating Polaroids -->
+                <div class="birthday-hero-atmosphere">
+                    <!-- Main Birthday Greeting Banner -->
+                    <div id="birthday-greeting-card" class="birthday-greeting-card">
+                        <h1 class="greeting-main-title">HAPPY BIRTHDAY, HARSHITHA!!</h1>
+                        <h2 class="greeting-nickname">My favourite Demogorgan ♡</h2>
+                        <p class="greeting-quote">"One more year of being you, and one more year of me being lucky enough to have you."</p>
+                    </div>
+
+                    <!-- Continuous Organic Floating Polaroids Atmosphere (Surrounding Title) -->
+                    <div id="birthday-photo-collage" class="floating-photo-universe"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+             STAGE 5: FRIENDSHIP QUIZ
+             ========================================== -->
+        <section id="stage-quiz" class="stage-section" aria-label="Friendship Quiz">
+            <div class="quiz-wrapper">
+                <div class="quiz-paper-card">
+                    
+                    <header class="quiz-header">
+                        <h2 class="quiz-title">Do You Really Know Me?</h2>
+                        <p class="quiz-subtitle">Let's see how well you know your favourite person. 👀</p>
+                        
+                        <!-- Visual Progress Bar -->
+                        <div class="quiz-progress-track">
+                            <div id="quiz-progress-fill" class="quiz-progress-fill"></div>
+                        </div>
+                    </header>
+
+                    <!-- Active Question Card -->
+                    <div id="quiz-active-card">
+                        <div id="quiz-question-number" class="quiz-question-number">Question 1 of 5</div>
+                        <div id="quiz-question-text" class="quiz-question-text">Loading question...</div>
+                        
+                        <div id="quiz-options-list" class="quiz-options-list"></div>
+
+                        <div class="quiz-actions">
+                            <button type="button" id="quiz-check-btn" class="scrapbook-btn" disabled>Check Answer</button>
+                            <button type="button" id="quiz-next-btn" class="scrapbook-btn" style="display: none;">Continue ➔</button>
+                        </div>
+
+                        <div id="quiz-feedback-box" class="quiz-feedback-box hidden" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Completed Quiz State Card -->
+                    <div id="quiz-completed-card" class="quiz-completed-box" style="display: none;">
+                        <div class="completed-icon">🎉 👑 💌</div>
+                        <h3 class="quiz-title">YAAAY!! 5 OUT OF 5!</h3>
+                        <p class="quiz-subtitle">You officially proved you know your bestie better than anyone else in the universe!</p>
+                        <button type="button" id="quiz-unlock-letter-btn" class="scrapbook-btn unlock-letter-cta-btn">
+                            You've unlocked something special 💌
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 6: SECRET LETTER
+             ========================================== -->
+        <section id="stage-letter" class="stage-section" aria-label="Secret Letter">
+            <div class="letter-wrapper">
+
+                <!-- 3D Cream Envelope with Wax Seal -->
+                <div id="envelope-wrapper" class="envelope-wrapper">
+                    <div id="cream-envelope" class="cream-envelope">
+                        <div class="wax-seal">💙</div>
+                        <div class="envelope-label">For Harshitha's Eyes Only</div>
+                    </div>
+                    <button type="button" id="open-envelope-btn" class="scrapbook-btn" style="margin-top: 20px;">
+                        Tap to open letter ✉️
+                    </button>
+                </div>
+
+                <!-- Unfolded Cream Letter Stationery with Fine Physical Texture -->
+                <article id="letter-stationery" class="letter-stationery">
+                    <!-- Physical Stationery Decorative Details -->
+                    <div class="letter-washi-tape"></div>
+                    <div class="letter-paperclip"></div>
+                    <div class="letter-heart-seal">💙</div>
+
+                    <h2 id="letter-recipient" class="letter-recipient"></h2>
+                    <div id="letter-body" class="letter-body"></div>
+                    <div class="letter-sign-off">
+                        <div id="letter-closing"></div>
+                        <div id="letter-signature"></div>
+                    </div>
+
+                    <!-- CTA to continue to scrapbook -->
+                    <div id="letter-continue-container" class="letter-to-scrapbook-cta" style="display: none;">
+                        <button type="button" id="letter-to-scrapbook-btn" class="scrapbook-btn">
+                            Continue to Our Scrapbook 📖 ➔
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 7 & 8: AUTHENTIC SCRAPBOOK & CHAOS
+             ========================================== -->
+        <section id="stage-scrapbook" class="stage-section" aria-label="Interactive Scrapbook">
+            <!-- Single Continuous Giant Physical Scrapbook Page -->
+            <div id="giant-scrapbook-page" class="giant-scrapbook-canvas">
+
+                <!-- Scrapbook Album Title Banner Taped to the Page -->
+                <div class="scrapbook-album-title-tape">
+                    <span class="washi-tape-strip tape-left"></span>
+                    <h2 class="scrapbook-album-headline">Harshitha &amp; Bestie: Our Friendship Diary ♡</h2>
+                    <p class="scrapbook-album-tagline">Collected memories, chaotic laughs, and forever promises ✨</p>
+                    <span class="washi-tape-strip tape-right"></span>
+                </div>
+
+                <!-- Continuous Dynamic Scrapbook Canvas Containing All 9 Photos, Film Strip, Ephemera & Doodles -->
+                <div id="scrapbook-continuous-canvas" class="scrapbook-canvas-body"></div>
+
+                <!-- Decorative Unfolding Paper Note Pinned to Page -->
+                <div class="unfolding-paper-note pinned-diary-note">
+                    <div class="note-pin-head">📌</div>
+                    <span class="note-tap-prompt">Tap to unfold secret bestie reminder!</span>
+                    <p class="note-content">"Remember: No matter how old we get, we will always be the weirdest, most chaotic duo in the room. And that job in the same city is getting locked in! 🏙️✨"</p>
+                </div>
+
+                <!-- Interactive Secret Stickers Tray Pinned to Page -->
+                <div class="interactive-stickers-row embedded-stickers-tray">
+                    <span class="interactive-sticker sticker-star" title="Click for a secret note!">⭐</span>
+                    <span class="interactive-sticker sticker-heart" title="Click for a secret note!">💙</span>
+                    <span class="interactive-sticker sticker-ribbon" title="Click for a secret note!">🎀</span>
+                    <span class="interactive-sticker sticker-sparkle" title="Click for a secret note!">✨</span>
+                </div>
+
+                <!-- STAGE 8: FINAL CHAOS BUTTON CARD PINNED TO BOTTOM OF SCRAPBOOK -->
+                <div id="chaos-button-card" class="chaos-section-card pinned-hazard-tape">
+                    <div class="chaos-warning-badge">⚠️ DO NOT PRESS ⚠️</div>
+                    <p class="chaos-tease-text">Seriously, Hachiga. Don't.</p>
+                    <button type="button" id="chaos-trigger-btn" class="chaos-big-btn">
+                        PRESS THE BUTTON
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         DEDICATED CENTERED FINAL REVEAL OVERLAY
+         (Appears strictly in the center after chaos with blurred background)
+         ========================================== -->
+    <div id="finale-centered-overlay" class="finale-fullscreen-overlay" role="dialog" aria-modal="true" aria-label="Final Birthday Message">
+        <div class="finale-centered-scrap-card pop-in">
+            <div class="finale-washi-tape"></div>
+            <h2 id="finale-msg-line1" class="finale-text-main">I love you, that's all.</h2>
+            <h3 id="finale-msg-line2" class="finale-text-sub">Tata, byee! ♡</h3>
+            <p id="finale-msg-sign" class="finale-signature">— your bestie 💙</p>
+            <button type="button" id="close-finale-overlay-btn" class="scrapbook-btn finale-close-btn">
+                Back to Scrapbook ♡
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Lightbox with 3D Flip for Scrapbook Photos -->
+    <div id="scrapbook-modal" class="scrapbook-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+        <div class="modal-content-wrapper">
+            <div id="modal-polaroid-card" class="modal-polaroid-card">
+                
+                <!-- Front: Photo & Caption -->
+                <div class="polaroid-side-front">
+                    <img id="modal-polaroid-img" class="modal-polaroid-img" src="" alt="Polaroid Memory">
+                    <h3 id="modal-polaroid-caption" class="modal-polaroid-caption"></h3>
+                </div>
+
+                <!-- Back: Handwritten Memory Note -->
+                <div class="polaroid-side-back">
+                    <span id="modal-polaroid-tag" class="scrapbook-date-tag" style="position: static; display: inline-block; margin-bottom: 16px;"></span>
+                    <p id="modal-polaroid-back-note" class="modal-back-note"></p>
+                </div>
+
+            </div>
+
+            <!-- Modal Action Buttons -->
+            <div class="modal-controls">
+                <button type="button" id="scrapbook-modal-flip" class="modal-ctrl-btn">🔄 Flip Polaroid</button>
+                <button type="button" id="scrapbook-modal-close" class="modal-ctrl-btn">✕ Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modular Vanilla JavaScript Application Logic -->
+    <script src="js/sounds.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/birthday.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/letter.js"></script>
+    <script src="js/scrapbook.js"></script>
+    <script src="js/chaos.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

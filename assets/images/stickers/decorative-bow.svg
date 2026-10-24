@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 120" width="140" height="120">
+  <defs>
+    <filter id="bow-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="3.5" stdDeviation="3.5" flood-color="#34557F" flood-opacity="0.22"/>
+    </filter>
+    <linearGradient id="ribbon-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2DCF7"/>
+      <stop offset="50%" stop-color="#95BDE5"/>
+      <stop offset="100%" stop-color="#709AC7"/>
+    </linearGradient>
+    <linearGradient id="knot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#95BDE5"/>
+      <stop offset="100%" stop-color="#5B87B5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sticker White Cutout Outline -->
+  <g filter="url(#bow-shadow)">
+    <!-- Tails base -->
+    <path d="M 70,55 Q 45,90 25,108 Q 45,85 55,65 Z" fill="#FFFFFF"/>
+    <path d="M 70,55 Q 95,90 115,108 Q 95,85 85,65 Z" fill="#FFFFFF"/>
+    <!-- Left loop base -->
+    <path d="M 70,50 C 45,15 8,22 18,52 C 24,70 60,58 70,50 Z" fill="#FFFFFF"/>
+    <!-- Right loop base -->
+    <path d="M 70,50 C 95,15 132,22 122,52 C 116,70 80,58 70,50 Z" fill="#FFFFFF"/>
+    <!-- Knot base -->
+    <circle cx="70" cy="50" r="14" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Flowing Tails -->
+  <path d="M 68,54 Q 44,88 26,105 Q 46,84 56,64 Z" fill="url(#ribbon-grad)" stroke="#5B87B5" stroke-width="1.2"/>
+  <path d="M 72,54 Q 96,88 114,105 Q 94,84 84,64 Z" fill="url(#ribbon-grad)" stroke="#5B87B5" stroke-width="1.2"/>
+
+  <!-- Left Loop with Inner Shadow -->
+  <path d="M 69,49 C 46,17 12,24 20,51 C 26,67 59,56 69,49 Z" fill="url(#ribbon-grad)" stroke="#5B87B5" stroke-width="1.5"/>
+  <!-- Left Inner Fold Crease -->
+  <path d="M 66,49 C 50,32 30,36 34,48 C 38,58 58,54 66,49 Z" fill="#709AC7" opacity="0.6"/>
+  <path d="M 38,42 Q 52,38 65,48" stroke="#FFFFFF" stroke-width="1.8" fill="none" opacity="0.75"/>
+
+  <!-- Right Loop with Inner Shadow -->
+  <path d="M 71,49 C 94,17 128,24 120,51 C 114,67 81,56 71,49 Z" fill="url(#ribbon-grad)" stroke="#5B87B5" stroke-width="1.5"/>
+  <!-- Right Inner Fold Crease -->
+  <path d="M 74,49 C 90,32 110,36 106,48 C 102,58 82,54 74,49 Z" fill="#709AC7" opacity="0.6"/>
+  <path d="M 102,42 Q 88,38 75,48" stroke="#FFFFFF" stroke-width="1.8" fill="none" opacity="0.75"/>
+
+  <!-- Center Silk Knot -->
+  <ellipse cx="70" cy="49" rx="10" ry="8.5" fill="url(#knot-grad)" stroke="#4A75A0" stroke-width="1.5"/>
+  <!-- Knot silk wrinkle folds -->
+  <path d="M 64,48 Q 70,45 76,48" stroke="#DCEBFA" stroke-width="1.5" fill="none"/>
+  <path d="M 66,52 Q 70,55 74,52" stroke="#4A75A0" stroke-width="1.2" fill="none"/>
+</svg>

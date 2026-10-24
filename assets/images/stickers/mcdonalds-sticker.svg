@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+  <defs>
+    <filter id="sticker-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="mcd-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E51837"/>
+      <stop offset="100%" stop-color="#C20E29"/>
+    </linearGradient>
+    <linearGradient id="mcd-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#FFC72C"/>
+    </linearGradient>
+  </defs>
+  <!-- White Sticker Border -->
+  <circle cx="70" cy="70" r="64" fill="#FFFFFF" filter="url(#sticker-shadow)"/>
+  <!-- Red Sticker Base -->
+  <circle cx="70" cy="70" r="58" fill="url(#mcd-red)"/>
+  <!-- McDonald's Golden Arches 'M' -->
+  <g fill="none" stroke="url(#mcd-gold)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left Arch -->
+    <path d="M 40,94 C 40,56 50,44 57,44 C 64,44 68,58 70,72"/>
+    <!-- Right Arch -->
+    <path d="M 70,72 C 72,58 76,44 83,44 C 90,44 100,56 100,94"/>
+  </g>
+  <!-- Subtle Sticker Highlight / Gloss -->
+  <path d="M 28,45 C 38,28 58,20 78,20 C 62,24 45,34 35,48 Z" fill="#FFFFFF" opacity="0.35"/>
+  <text x="70" y="112" font-family="'Patrick Hand', 'Caveat', cursive, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">i'm lovin' it</text>
+</svg>

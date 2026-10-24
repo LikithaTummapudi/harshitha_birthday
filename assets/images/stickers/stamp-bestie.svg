@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#6D96CC" stroke-width="3" stroke-dasharray="6 3" />
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#6D96CC" stroke-width="1.5" />
+  <text x="50" y="38" font-family="'Caveat', cursive, sans-serif" font-size="14" font-weight="bold" fill="#34557F" text-anchor="middle">OFFICIAL</text>
+  <text x="50" y="55" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="bold" fill="#6D96CC" text-anchor="middle">BESTIE</text>
+  <text x="50" y="70" font-family="'Caveat', cursive, sans-serif" font-size="11" fill="#34557F" text-anchor="middle">★ FOREVER ★</text>
+</svg>

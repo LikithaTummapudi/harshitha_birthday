@@ -1,0 +1,517 @@
+/**
+ * responsive.css - Custom Responsive Layouts for Mobile, Tablet, and Desktop
+ */
+
+/* ==========================================
+   TABLET ADAPTATIONS (max-width: 960px)
+   ========================================== */
+@media screen and (max-width: 960px) {
+    .scrapbook-app-container {
+        padding: 16px 16px 70px 16px;
+    }
+
+    .greeting-main-title {
+        font-size: 44px;
+    }
+
+    .greeting-nickname {
+        font-size: 28px;
+    }
+
+    .greeting-quote {
+        font-size: 16px;
+    }
+
+    .birthday-hero-atmosphere {
+        min-height: 720px;
+    }
+
+    .floating-polaroid-slot {
+        width: 145px;
+    }
+
+    .floating-birthday-polaroid {
+        width: 100%;
+    }
+
+    .floating-birthday-polaroid img {
+        height: 115px;
+    }
+
+    .scrapbook-physical-canvas {
+        gap: 32px;
+    }
+
+    .scrapbook-memory-cluster {
+        width: 280px;
+    }
+
+    .scrapbook-polaroid-item {
+        width: 260px;
+    }
+
+    .letter-stationery {
+        padding: 40px 30px;
+    }
+
+    .letter-body p {
+        font-size: 20px;
+    }
+}
+
+/* ==========================================
+   MOBILE PHONES (max-width: 600px)
+   ========================================== */
+@media screen and (max-width: 600px) {
+    body {
+        background-size: 18px 18px, 36px 36px, 36px 36px;
+    }
+
+    .scrapbook-app-container {
+        padding: 12px 12px 100px 12px; /* Extra bottom padding for sticky mobile nav */
+    }
+
+    /* Sound button on mobile */
+    .sound-toggle-btn {
+        top: 12px;
+        right: 12px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .sound-toggle-btn .sound-label {
+        display: none;
+    }
+
+    /* Stage 1: Entrance */
+    .diary-lock-card {
+        padding: 34px 18px;
+    }
+
+    .diary-title {
+        font-size: 30px;
+    }
+
+    .diary-input {
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 12px 36px 12px 12px;
+    }
+
+    .scrapbook-btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    /* Stage 2: Suspense */
+    .suspense-card {
+        padding: 36px 18px;
+    }
+
+    .suspense-quote {
+        font-size: 26px;
+    }
+
+    .suspense-subtext {
+        font-size: 16px;
+    }
+
+    /* Stage 3 & 4: Cake & Living Floating Atmosphere on Mobile */
+    .cake-ceremony-container {
+        min-height: calc(85vh - 50px);
+        padding: 16px 8px;
+    }
+
+    .ceremony-instructions-card {
+        padding: 16px 16px;
+        margin-bottom: 16px;
+        max-width: 95%;
+    }
+
+    .ceremony-prompt {
+        font-size: 28px;
+    }
+
+    .ceremony-subtext {
+        font-size: 14px;
+    }
+
+    .cake-container {
+        max-width: 240px;
+    }
+
+    .birthday-cake-svg {
+        max-width: 220px;
+    }
+
+    .ceremony-action-group {
+        margin-top: 18px;
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .blow-candles-cta {
+        font-size: 16px;
+        padding: 14px 22px;
+        width: 100%;
+    }
+
+    .candle-counter-badge {
+        font-size: 13px;
+        padding: 5px 14px;
+    }
+
+    .birthday-greeting-card {
+        padding: 10px 8px;
+        margin-bottom: 18px;
+    }
+
+    .greeting-main-title {
+        font-size: clamp(28px, 7vw, 36px);
+        white-space: normal;
+        line-height: 1.25;
+        word-break: break-word;
+        text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.95), 0 2px 8px rgba(168, 201, 240, 0.4);
+    }
+
+    .greeting-nickname {
+        font-size: 24px;
+    }
+
+    .greeting-quote {
+        font-size: 16px;
+    }
+
+    /* Stage 3 & 4: Mobile Floating Polaroids framing the central title */
+    .birthday-hero-atmosphere {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto 25px auto;
+    }
+
+    .floating-photo-universe {
+        position: relative !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .floating-polaroid-slot {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 135px !important;
+        height: auto !important;
+    }
+
+    .floating-birthday-polaroid {
+        position: relative !important;
+        width: 100% !important;
+        padding: 8px 8px 18px 8px;
+    }
+
+    .floating-birthday-polaroid img {
+        height: 110px;
+    }
+
+    .floating-birthday-polaroid .polaroid-caption {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .floating-birthday-polaroid .washi-tape {
+        width: 55px;
+        height: 16px;
+        top: -8px;
+    }
+
+    /* Sticky Mobile Navigation Bar */
+    .scrapbook-nav-container {
+        position: fixed;
+        bottom: 12px;
+        top: auto;
+        left: 10px;
+        right: 10px;
+        margin-bottom: 0;
+        z-index: 1000;
+    }
+
+    .scrapbook-nav-strip {
+        padding: 6px 10px;
+        border-radius: 30px;
+        box-shadow: 0 8px 24px rgba(52, 85, 127, 0.35);
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .nav-dedication {
+        display: none;
+    }
+
+    .nav-links-group {
+        width: 100%;
+        justify-content: space-around;
+        gap: 4px;
+    }
+
+    .scrapbook-nav-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        flex: 1;
+        justify-content: center;
+    }
+
+    /* Stage 5: Quiz Mobile */
+    .quiz-paper-card {
+        padding: 26px 16px;
+    }
+
+    .quiz-title {
+        font-size: 30px;
+    }
+
+    .quiz-question-text {
+        font-size: 17px;
+    }
+
+    .quiz-option-btn {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .quiz-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .quiz-actions button {
+        width: 100%;
+    }
+
+    /* Stage 6: Letter Mobile */
+    .cream-envelope {
+        padding: 36px 14px;
+    }
+
+    .letter-stationery {
+        padding: 28px 16px;
+    }
+
+    .letter-stationery::before {
+        display: none;
+    }
+
+    .letter-washi-tape {
+        width: 100px;
+        height: 22px;
+        top: -10px;
+    }
+
+    .letter-paperclip {
+        right: 14px;
+        top: -14px;
+        width: 22px;
+        height: 44px;
+    }
+
+    .letter-heart-seal {
+        bottom: 14px;
+        left: 14px;
+        font-size: 22px;
+    }
+
+    .letter-recipient {
+        font-size: 24px;
+    }
+
+    .letter-body p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .letter-sign-off {
+        font-size: 19px;
+    }
+
+    /* Stage 7: Giant Continuous Physical Scrapbook Mobile */
+    .giant-scrapbook-canvas {
+        padding: 20px 10px 50px 10px;
+        margin: 5px auto 20px auto;
+        border-radius: 4px;
+    }
+
+    .scrapbook-album-title-tape {
+        padding: 14px 12px;
+        margin-bottom: 24px;
+    }
+
+    .scrapbook-album-headline {
+        font-size: 26px;
+    }
+
+    .scrapbook-album-tagline {
+        font-size: 15px;
+    }
+
+    .scrapbook-dense-flow-zone {
+        gap: 20px 12px;
+        justify-content: center;
+    }
+
+    .scrapbook-camera-roll-strip {
+        padding: 8px 10px;
+        transform: rotate(-1deg);
+    }
+
+    .film-single-frame {
+        min-width: 100px;
+        padding: 4px;
+    }
+
+    .film-single-frame img {
+        height: 80px;
+    }
+
+    .film-frame-caption {
+        font-size: 11px;
+    }
+
+    .scrapbook-memory-cluster {
+        width: 100%;
+        max-width: 300px;
+        margin: 12px auto !important;
+    }
+
+    .scrapbook-polaroid-item {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 12px 24px 12px;
+    }
+
+    .polaroid-img-wrapper img {
+        height: 190px;
+    }
+
+    .polaroid-handwritten-caption {
+        font-size: 18px;
+    }
+
+    .scrapbook-ephemera-item {
+        max-width: 85vw;
+    }
+
+    .ephemera-pastels {
+        width: 170px;
+    }
+    .ephemera-board {
+        width: 150px;
+    }
+    .ephemera-ticket {
+        width: 160px;
+    }
+    .ephemera-bench {
+        width: 140px;
+    }
+
+    .sticker-scatter-whale,
+    .sticker-scatter-glasses,
+    .sticker-scatter-bow,
+    .sticker-scatter-bus,
+    .sticker-scatter-rickshaw,
+    .sticker-scatter-road,
+    .sticker-scatter-flowers,
+    .sticker-scatter-ice-cream,
+    .sticker-scatter-teddy,
+    .sticker-scatter-burger,
+    .sticker-scatter-pizza {
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+        align-self: center !important;
+    }
+
+    .doodle-stars {
+        width: 60px;
+    }
+
+    .doodle-hearts {
+        width: 55px;
+    }
+
+    .scrapbook-sticky-note {
+        width: 150px;
+        min-height: 115px;
+        font-size: 16px;
+        padding: 14px 10px 10px 10px;
+    }
+
+    .margin-annotation-tag {
+        font-size: 18px;
+    }
+
+    /* Lightbox Modal Mobile */
+    .modal-content-wrapper {
+        max-width: 320px;
+    }
+
+    .modal-polaroid-img {
+        height: 240px;
+    }
+
+    .modal-polaroid-caption {
+        font-size: 20px;
+    }
+
+    .modal-back-note {
+        font-size: 20px;
+    }
+
+    /* Stage 8: Chaos Mobile */
+    .chaos-section-card {
+        padding: 32px 16px;
+    }
+
+    .chaos-warning-badge {
+        font-size: 19px;
+    }
+
+    .chaos-tease-text {
+        font-size: 22px;
+    }
+
+    .chaos-big-btn {
+        font-size: 17px;
+        padding: 16px 28px;
+        width: 100%;
+    }
+
+    /* Centered Finale Overlay on Mobile */
+    .finale-centered-scrap-card {
+        padding: 40px 22px;
+        width: 95%;
+    }
+
+    .finale-text-main {
+        font-size: 34px;
+    }
+
+    .finale-text-sub {
+        font-size: 26px;
+    }
+
+    .finale-signature {
+        font-size: 20px;
+    }
+}

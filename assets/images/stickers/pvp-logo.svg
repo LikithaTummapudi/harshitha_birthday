@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <filter id="badge-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="pvp-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#E0A926"/>
+    </linearGradient>
+    <linearGradient id="pvp-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1D3557"/>
+      <stop offset="100%" stop-color="#0F1F38"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sticker White Border / Die-Cut Base -->
+  <path d="M 75,10 
+           L 135,35 
+           L 135,85 
+           C 135,115 105,135 75,142 
+           C 45,135 15,115 15,85 
+           L 15,35 Z" 
+        fill="#FFFFFF" filter="url(#badge-shadow)"/>
+
+  <!-- Shield Body -->
+  <path d="M 75,16 
+           L 129,38 
+           L 129,82 
+           C 129,109 102,127 75,134 
+           C 48,127 21,109 21,82 
+           L 21,38 Z" 
+        fill="url(#pvp-blue)" stroke="url(#pvp-gold)" stroke-width="2.5"/>
+
+  <!-- Laurel Wreath Leaves (Left & Right) -->
+  <g fill="none" stroke="url(#pvp-gold)" stroke-width="1.8" stroke-linecap="round">
+    <path d="M 40,55 C 34,70 36,90 50,105"/>
+    <path d="M 110,55 C 116,70 114,90 100,105"/>
+    <!-- Leaf pairs -->
+    <path d="M 38,62 Q 32,60 36,54 M 39,74 Q 33,74 35,68 M 43,86 Q 37,88 38,82"/>
+    <path d="M 112,62 Q 118,60 114,54 M 111,74 Q 117,74 115,68 M 107,86 Q 113,88 112,82"/>
+  </g>
+
+  <!-- Central Star & Emblem Details -->
+  <polygon points="75,32 77,38 83,38 78,42 80,48 75,44 70,48 72,42 67,38 73,38" fill="url(#pvp-gold)"/>
+
+  <!-- Prominent PVP Typography -->
+  <text x="75" y="70" font-family="'Cinzel', serif, 'Arial Black', sans-serif" font-size="28" font-weight="900" fill="url(#pvp-gold)" text-anchor="middle" letter-spacing="3">PVP</text>
+  
+  <!-- Banner Ribbon for SIDDHARTHA / PVPSIT -->
+  <path d="M 32,82 L 118,82 L 112,96 L 38,96 Z" fill="#E63946" stroke="url(#pvp-gold)" stroke-width="1"/>
+  <text x="75" y="92" font-family="sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">SIDDHARTHA</text>
+  <text x="75" y="106" font-family="monospace, sans-serif" font-size="7" font-weight="700" fill="#A8DADC" text-anchor="middle" letter-spacing="1.5">PVPSIT • BESTIE CAMPUS</text>
+
+  <!-- Small Graduation Cap icon at bottom of shield -->
+  <g transform="translate(67, 114) scale(0.65)" fill="url(#pvp-gold)">
+    <polygon points="12,0 24,6 12,12 0,6"/>
+    <path d="M 4,8 L 4,14 C 4,18 20,18 20,14 L 20,8 Z"/>
+  </g>
+</svg>
